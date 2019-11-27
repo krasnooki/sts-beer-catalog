@@ -129,18 +129,6 @@ class BeerEntity
         return $this;
     }
 
-    public function getBrewery(): ?int
-    {
-        return $this->brewery;
-    }
-
-    public function setBrewery(int $brewery): self
-    {
-        $this->brewery = $brewery;
-
-        return $this;
-    }
-
     public function getImageUrl(): ?string
     {
         return $this->image_url;

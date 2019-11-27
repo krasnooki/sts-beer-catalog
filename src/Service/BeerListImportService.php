@@ -24,12 +24,12 @@ class BeerListImportService
 		$this->data = json_decode($response);
 	}
 		
-	public function getBeersList()
+	public function getBeersList() : array
 	{
 		return $this->data;
 	}	
 		
-	public function getBeerByProductId($id)
+	public function getBeerByProductId($id) : object
 	{
 		$breverlist = array_filter(
 			$this->data,
@@ -41,7 +41,7 @@ class BeerListImportService
 		return reset($breverlist);
 	}
 	
-	public function getBrewersList()
+	public function getBrewersList() : array
 	{
 		$brewers = array_map(function($data){
 			return $data->brewer;
@@ -52,7 +52,7 @@ class BeerListImportService
 		return array_values(array_intersect_key($this->data, $uniqueBrewers));
 	}
 	
-	public function getSizesList()
+	public function getSizesList() : array
 	{
 		$brewers = array_map(function($data){
 			return $data->size;

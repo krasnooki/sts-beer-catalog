@@ -1,0 +1,16 @@
+Symfony version: v5.0.0
+
+PHP version: 7.2.13
+
+mySQL version: 10.3.11-MariaDB
+DATABASE_URL=mysql://sts:stspass@127.0.0.1:3306/sts-beer-catalog
+
+serwer www: Apache/2.4.34 (Fedora)
+
+Adresy:
+http://127.0.0.1:8000/import //importuje listę piw do bazy danych MySQl - wykoniać tylko raz!!!
+http://127.0.0.1:8000/brewer //lista browarów
+http://127.0.0.1:8000/beers  //lista piw
+http://127.0.0.1:8000/beers/{id}  //pojedyncze piwo
+
+
