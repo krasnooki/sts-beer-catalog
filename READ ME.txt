@@ -11,6 +11,16 @@ Adresy:
 http://127.0.0.1:8000/import //importuje listę piw do bazy danych MySQl - wykoniać tylko raz!!!
 http://127.0.0.1:8000/brewer //lista browarów
 http://127.0.0.1:8000/beers  //lista piw
+
+zaawansowane wyszukiwanie:
+//domyślne
+http://127.0.0.1:8000/beers/brewer/0/name//countrycode//type//pricefrom/0.00/priceto/0.00/page/1
+
+//przykład
+http://127.0.0.1:8000/beers/brewer/70/name//countrycode//type//pricefrom/0.00/priceto/10.00/page/1
+http://127.0.0.1:8000/beers/brewer/0/name//countrycode/PL/type//pricefrom/0.00/priceto/0.00/page/1
+http://127.0.0.1:8000/beers/brewer/0/name/tysk/countrycode//type//pricefrom/0.00/priceto/0.00/page/1
+
 http://127.0.0.1:8000/beers/{id}  //pojedyncze piwo
 
 
